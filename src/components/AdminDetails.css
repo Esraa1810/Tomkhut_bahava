@@ -1,0 +1,230 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background:white;
+  margin: 0;
+  padding: 0;
+}
+
+.admin-details-container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  width: 40%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.admin-details-header h2 {
+  color: black;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.admin-details-header button {
+  padding: 12px;
+  background-color: pink;
+  color: black;
+  border: 3px solid #F08080;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+}
+
+.admin-details-header button:hover {
+  background-color: #f08080;
+}
+
+.admin-details-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.admin-details-form input {
+  width: 90%;
+  padding: 12px;
+  border: 3px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.admin-details-form input:focus {
+  border-color: #f08080;
+  outline: none;
+}
+
+.admin-details-form button {
+  padding: 12px;
+  background-color: pink;
+  color: black;
+  border: 3px solid #F08080;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.admin-details-form button:hover {
+  background-color: #f08080;
+}
+
+.admin-list-container {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.admin-list-container h3 {
+  color: black;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.admin-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.admin-list li {
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fafafa;
+  transition: box-shadow 0.3s;
+}
+
+.admin-list li:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-list p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.admin-list p:first-child {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Updated button styles */
+button {
+  display: block;
+  width: 80%;
+  max-width: 200px;
+  margin: 10px auto;
+  padding: 12px;
+  background-color: pink;
+  color: black;
+  border: 3px solid #F08080;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #f08080;
+}
+
+/* Specific styles for the "Show User Details" button */
+.admin-details-container > button {
+  background-color: pink;
+  color: black;
+  border: 1px solid #F08080;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.admin-details-container > button:hover {
+  background-color: #f08080;
+}
+
+p {
+  text-align: center;
+  color: #0e100f;
+  font-size: 1rem;
+}
+
+/* Styles for the delete confirm container */
+.delete-confirm-container {
+  text-align: center;
+  margin-top: 20px;
+  border :#e60000;
+}
+
+.delete-confirm-container p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.delete-confirm-container button {
+  display: inline-block;
+  width: auto;
+  margin: 10px 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-confirm-container button:first-of-type {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.delete-confirm-container button:first-of-type:hover {
+  background-color: #e60000;
+}
+
+.delete-confirm-container button:last-of-type {
+  background-color: #ddd;
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
+
+.delete-confirm-container button:last-of-type:hover {
+  background-color: #bbb;
+}
+
+/* Specific styles for the "Delete Account" button */
+.delete-account-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-account-button:hover {
+  background-color: #e60000;
+}

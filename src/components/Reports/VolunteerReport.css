@@ -1,0 +1,186 @@
+/* General container styles */
+.volunteer-report-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 70px; /* Added margin at the bottom of the page */
+  position: relative; /* Needed for absolute positioning of the button */
+}
+
+/* Header style */
+.volunteer-report-container h1 {
+  text-align: center;
+  margin-bottom: 90px; /* Increased space between the header and the start of the data */
+}
+
+.Addess h1 {
+  text-align: center;
+  margin-bottom: 8px; /* Increased space between the header and the start of the data */
+
+}
+
+.header{
+  margin-top: 85px;
+}
+
+/* First filter section */
+.first-filter-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between boxes */
+  margin-bottom: 20px;
+}
+
+.first-filter-container .filter-section {
+  flex: 1;
+  min-width: 200px; /* Minimum width for each box */
+}
+
+/* Filter sections in the second line */
+.Second-filter-sectionBirth,
+.third-filter-sectionBirth {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between boxes */
+  margin-bottom: 20px;
+}
+
+.Second-filter-sectionBirth .filter-section,
+.third-filter-sectionBirth .filter-section {
+  flex: 1;
+  min-width: 200px; /* Minimum width for each box */
+}
+
+/* Fourth filter section */
+.forth-filter-sectionBirth {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between 2 pairs of date inputs */
+  margin-bottom: 20px;
+}
+
+.title {
+  margin-top: 28px;
+}
+
+.forth-filter-sectionBirth > div {
+  flex: 1;
+  width: auto; /* Allow the boxes to adjust width */
+}
+
+/* Fifth filter section */
+.fifth-filter-sectionCreatedAt {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between 2 pairs of date inputs */
+  margin-bottom: 20px;
+}
+
+.fifth-filter-sectionCreatedAt > div {
+  flex: 1;
+  width: auto; /* Allow the boxes to adjust width */
+}
+
+/* Updated styles to place fifth and forth sections on the same line */
+
+/* Fourth and Fifth filter sections */
+.forth-filter-sectionBirth,
+.fifth-filter-sectionCreatedAt {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between the sections */
+  margin-bottom: 20px;
+}
+
+.forth-filter-sectionBirth > div,
+.fifth-filter-sectionCreatedAt > div {
+  flex: 1;
+  min-width: 0; /* Allowing flexibility for different content widths */
+  width: auto; /* Allow boxes to adjust width */
+}
+
+/* Style for the DatePicker component */
+.react-datepicker-wrapper,
+.react-datepicker__input-container input {
+  width: 100%;
+}
+
+/* Table styles */
+.volunteers-report-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px; /* Added space between the filters and the table */
+}
+
+.volunteers-report-table th,
+.volunteers-report-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.volunteers-report-table th {
+  background-color: #A8A8A8;
+}
+
+.volunteers-report-table tr:nth-child(odd) {
+  background-color: #f0f0f0; /* Grey color for odd rows */
+}
+
+.volunteers-report-table tr:nth-child(even) {
+  background-color: #ffffff; /* White color for even rows */
+}
+
+/* Hover effect for table rows */
+.volunteers-report-table tr:hover {
+  background-color: #f8d7da;
+}
+
+.text-section {
+  text-align: center;
+}
+
+/* Updated styles to place the forth and fifth sections on the same line */
+.special-sectio {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between the sections */
+  margin-bottom: 20px;
+}
+
+.special-sectio .forth-filter-sectionBirth,
+.special-sectio .fifth-filter-sectionCreatedAt {
+  display: flex;
+  gap: 20px; /* Space between the two sections */
+  flex: 1;
+  width: auto; /* Allow the sections to adjust width */
+}
+
+.special-sectio .forth-filter-sectionBirth > div,
+.special-sectio .fifth-filter-sectionCreatedAt > div {
+  flex: 1;
+  width: auto; /* Allow the boxes to adjust width */
+}
+
+/* Style for the export button container */
+.export-button-container {
+  /* position: absolute; */
+  /* top: 20px; Distance from the top of the container */
+  left: 100px; /* Distance from the right of the container */
+  margin-right: 85%;
+  /* z-index: 1; Ensure the button is on top */
+}
+/* 
+.export-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.export-button:hover {
+  background-color: #0056b3;
+} */

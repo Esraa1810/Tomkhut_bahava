@@ -1,0 +1,85 @@
+.ActiveSupportList-active-support-list {
+  width: 100%;
+  margin: 0 auto;
+  direction: rtl;
+  font-family: Arial, sans-serif;
+}
+
+.ActiveSupportList-support-tabs {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  gap: 5px;
+}
+
+.ActiveSupportList-support-tab {
+  background-color: #e0e0e0;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.ActiveSupportList-support-tab.active {
+  background-color: pink;
+  color: black;
+}
+
+.ActiveSupportList-support-details {
+  position: relative;
+  background-color: pink;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.ActiveSupportList-support-details.hidden {
+  display: none;
+}
+
+.ActiveSupportList-delete-icon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.ActiveSupportList-edit-icon {
+  position: absolute;
+  top: 5px;
+  left: 30px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.ActiveSupportList-details-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.ActiveSupportList-details-row.single-group {
+  flex-direction: column;
+}
+
+.ActiveSupportList-details-group {
+  width: 48%;
+}
+
+.ActiveSupportList-details-group label {
+  display: block;
+  font-size: 19px;
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.ActiveSupportList-details-group p {
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+}

@@ -1,0 +1,45 @@
+/* Add your styles for the EditDetails component here */
+
+.edit-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  .edit-details h2 {
+    margin-top: 200px;
+  }
+  
+  .edit-details form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .edit-details input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .edit-details button {
+    padding: 10px;
+    background-color: #3165b5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .edit-details button:hover {
+    background-color: #f08080;
+  }
+  

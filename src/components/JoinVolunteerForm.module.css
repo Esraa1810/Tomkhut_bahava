@@ -1,0 +1,169 @@
+.join-form-body {
+  background-color: #FFF8F9; /* Set the page background to pink */
+}
+
+.join-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white; /* Set the form background to white */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align all children (labels, inputs) */
+}
+
+.join-form-group {
+  width: 100%; /* Make sure each form group takes full width */
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align each form group */
+}
+
+.join-form-header {
+  margin-bottom: -40px; /* Adjust the space between the header and the first form group */
+}
+
+/* Ensure there are no additional margins or paddings affecting the layout */
+.join-form-header,
+.join-form-group {
+  padding: 0;
+  border: none;
+}
+
+.join-form-label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: center; /* Center text of the label */
+}
+
+.join-form-required {
+  color: red;
+}
+
+.join-form-sub-label {
+  font-size: 0.8em;
+  color: gray;
+}
+
+.join-form-error-text {
+  color: red; /* Set error text color to red */
+  font-size: 0.9em; /* Optional: Adjust font size for better readability */
+  margin-top: 5px; /* Space between input field and error message */
+}
+
+.join-form-error-container {
+  background-color: #ffe6e6; /* Light red background */
+  color: #721c24; /* Dark red text */
+  border: 1px solid #f5c6cb; /* Light red border */
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.join-form-error-container h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+}
+
+.join-form-error-container h3::before {
+  content: '⚠️'; /* Warning emoji */
+  margin-right: 10px;
+}
+
+.join-form-error-container ul {
+  margin: 0;
+  padding-left: 20px; /* Space for the bullet points */
+}
+
+.join-form-error-container li {
+  margin-bottom: 5px; /* Space between list items */
+}
+
+.join-form-input,
+.join-form-select,
+.join-form-textarea,
+.react-select__control {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center; /* Center text of inputs */
+}
+
+.join-form-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px; /* Add some space above the button */
+}
+
+.join-form-button:hover {
+  background-color: #0056b3;
+}
+
+.date-picker-container {
+  position: relative;
+  width: 100%; /* Ensure the container takes full width */
+}
+
+.date-picker-container input {
+  width: calc(100% - 40px);
+  display: inline-block;
+  padding-right: 40px;
+  text-align: center; /* Center text of date input */
+}
+
+.date-picker-container .react-datepicker-wrapper {
+  width: 100%;
+}
+
+.date-picker-container .react-datepicker__input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the input container */
+}
+
+.date-picker-container .react-datepicker__input-container input {
+  width: 100%;
+  border-radius: 5px;
+  text-align: center; /* Center text of date input */
+}
+
+.join-form-logo {
+  width: 100px; /* Adjust this value to make the logo smaller */
+  margin: 0 auto;
+  display: block;
+}
+
+.react-select__control {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+.text-center {
+  text-align: center; /* Center-align all text inside the container */
+}
+
+.text-center h4 {
+  margin: 0; /* Optional: Remove default margins if needed */
+}
+.sec-text-center {
+  text-align: center; /* Center-align all text inside the container */
+}
+
+.sec-text-center h4 {
+  margin: 0; /* Optional: Remove default margins if needed */
+}

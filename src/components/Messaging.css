@@ -1,0 +1,259 @@
+/* General container styles */
+.messaging-container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  /* grid-column: 1 / -1; */
+  padding: 10px;
+  /* background-color: #f1f1f1; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.search-bar {
+  padding: 8px;
+  width: 40%;
+  justify-content: center;
+  border: 1px solid pink;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-top: 110px;
+}
+
+.sidebar {
+  padding: 20px;
+  background-color: #f1f1f1;
+  display: flex;
+  font-weight: bold;
+  flex-direction: column;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.sidebar button {
+  padding: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  background-color: pink;
+  color: black;
+  cursor: pointer;
+  border: 3px solid #F08080;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.sidebar .compose-button {
+  background-color: pink;
+  font-weight: bold;
+  border: 3px solid #F08080;
+  text-align: center;
+}
+
+.sidebar button:hover {
+  background-color: #F08080;
+  transform: translateY(-2px);
+}
+
+.message-content {
+  padding: 20px;
+  overflow-y: auto;
+  display: block;
+  height: calc(100vh - 40px);
+  box-sizing: border-box;
+}
+
+.message {
+  width: 80%;
+  padding: 20px;
+  margin-bottom: 15px;
+  border: 2px solid pink;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.message-icons {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.star-button, .delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: pink;
+  outline: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.star-button {
+  margin-left: auto;
+}
+
+.delete-button {
+  margin-right: auto;
+}
+
+.star-button:hover, .delete-button:hover {
+  color: #F08080;
+  transform: scale(1.2);
+}
+
+.star-button:focus, .delete-button:focus, .star-button:active, .delete-button:active {
+  background-color: #ff69b4;
+}
+
+.message p {
+  margin: 0;
+}
+
+.message span {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  text-align: right;
+  margin-top: 5px;
+}
+
+.compose-window {
+  position: fixed;
+  width: 40%;
+  top: 20%;
+  left: 30%;
+  right: 30%;
+  background-color: white;
+  padding: 30px;
+  border: 2px solid #F08080;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.compose-window h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #F08080;
+}
+
+.compose-window select, .compose-window textarea, .compose-window button {
+  width: 90%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.compose-window select:focus, .compose-window textarea:focus, .compose-window button:focus {
+  border-color: #F08080;
+  outline: none;
+}
+
+.compose-window button {
+  background-color: #3379c8;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.compose-window button:hover {
+  background-color: #F08080;
+  transform: translateY(-2px);
+}
+
+.compose-window button:active {
+  transform: translateY(0);
+}
+
+textarea {
+  resize: none;
+}
+
+.delete-confirm-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #F08080;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  z-index: 1000;
+}
+
+.delete-confirm-container p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.delete-confirm-container button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-confirm-container button:first-of-type {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.delete-confirm-container button:first-of-type:hover {
+  background-color: #e60000;
+}
+
+.delete-confirm-container button:last-of-type {
+  background-color: #ddd;
+  color: black;
+}
+
+.delete-confirm-container button:last-of-type:hover {
+  background-color: #bbb;
+}
+
+/* Adding a yellow star beside הודעות מועדפות */
+.sidebar button.starred-messages::after {
+  content: '⭐';
+  margin-left: 5px;
+  color: gold;
+}
+
+/* Improved message structure */
+.message p.sender-recipient {
+  font-weight: bold;
+}
+
+.message p.message-content {
+  margin: 10px 0;
+}
+
+.message span.timestamp {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  text-align: right;
+  margin-top: 5px;
+}

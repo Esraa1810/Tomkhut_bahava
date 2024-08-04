@@ -1,0 +1,112 @@
+/* General container styles */
+.girls-report-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 70px; /* Added margin at the bottom of the page */
+  direction: rtl; /* Ensure the text direction is right-to-left */
+}
+
+/* Header style */
+.girls-report-container h1 {
+  text-align: center;
+  margin-bottom: 70px; /* Increased space between the header and the start of the data */
+}
+
+.Addess h1 {
+  text-align: center;
+  margin-bottom: 100px; /* Increased space between the header and the start of the data */
+}
+
+/* First filter section */
+.first-filter-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between boxes */
+  margin-bottom: 20px;
+}
+
+.first-filter-container .filter-section {
+  flex: 1;
+  min-width: 200px; /* Minimum width for each box */
+}
+
+/* Filter sections in the second line */
+.Second-filter-sectionBirth {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.Second-filter-sectionBirth .filter-section {
+  flex: 1;
+  min-width: 200px; /* Minimum width for each box */
+}
+
+/* Date range styles */
+.date-range {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 20px; /* Space between date pickers */
+}
+
+.date-range label {
+  flex: 0 0 100px; /* Fixed width for labels */
+  text-align: left; /* Align labels to the left */
+}
+
+.date-range .react-datepicker-wrapper {
+  flex: 1; /* Grow date picker to fill available space */
+}
+
+/* Table styles */
+.girls-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.girls-table th,
+.girls-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center; /* Center-align text in table cells */
+}
+
+.girls-table th {
+  background-color: #A8A8A8;
+}
+
+.girls-table td a {
+  color: #007bff;
+  text-decoration: none;
+  
+}
+
+.girls-table td a:hover {
+  text-decoration: underline;  
+}
+
+
+.girls-table tr:nth-child(odd) {
+  background-color: #f0f0f0; /* Grey color for odd rows */
+}
+
+.girls-table tr:nth-child(even) {
+  background-color: #ffffff; /* White color for even rows */
+}
+
+
+.girls-table tr:hover {
+  background-color: #f8d7da;
+}
+
+.export-button-container {
+  /* position: absolute; */
+  /* top: 20px; Distance from the top of the container */
+  left: 100px; /* Distance from the right of the container */
+  margin-right: 85%;
+  /* z-index: 1; Ensure the button is on top */
+}

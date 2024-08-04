@@ -1,0 +1,51 @@
+.documentation-container {
+  margin-top: 20px;
+}
+
+.documentation-box {
+  background: #ffffff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.doc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.doc-date {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.doc-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.doc-item {
+  margin-bottom: 10px;
+}
+
+.doc-label {
+  font-weight: bold;
+}
+
+.doc-value {
+  margin-left: 5px;
+}
+
+.delete-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}

@@ -1,0 +1,96 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    match /admins/{document=**} {
+      allow read, write: if request.auth != null;
+    }
+
+    // Allow read and write access to authenticated users for the notifications collection
+    match /notifications/{document=**} {
+      allow read, write: if request.auth != null;
+    }
+
+    // Allow read and write access to authenticated users for the documentation collection
+    match /documentation/{document=**} {
+      allow read, write: if request.auth != null;
+    }
+
+    // Allow read/write access to the "documentation" collection for authenticated users
+    match /documentation/{docId} {
+      allow read, write: if request.auth != null;
+    }
+
+    // Allow read/write access to the "notifications" collection for authenticated users
+    match /notifications/{notificationId} {
+      allow read, write: if request.auth != null;
+    }
+
+    // Allow read/write access to the "messages" collection for authenticated users
+    match /messages/{messageId} {
+      allow read, write: if request.auth != null;
+    }
+
+    // Allow read/write access to the "admins" collection for authenticated users
+    match /admins/{adminId} {
+      allow read, write: if request.auth != null;
+    }
+
+    // Allow read/write access to the "girls" collection for authenticated users
+    match /girls/{girlId} {
+      allow read, write: if request.auth != null;
+    }
+
+    // Allow read/write access to the "volunteer" collection for authenticated users
+    match /volunteer/{volunteerId} {
+      allow read, write: if request.auth != null;
+    }
+
+    // Allow read/write access to the "Framework" collection for authenticated users
+    match /Framework/{frameworkId} {
+      allow read, write: if request.auth != null;
+    }
+
+    // Allow read/write access to the "workers" collection for authenticated users
+    match /workers/{workerId} {
+      allow read, write: if request.auth != null;
+    }
+
+    // Allow read/write access to the "branches" collection for authenticated users
+    match /branches/{branchId} {
+      allow read, write: if request.auth != null;
+    }
+
+    // Allow read access to the "cities" collection for authenticated users
+    match /cities/{cityId} {
+      allow read: if request.auth != null;
+    }
+
+    // Allow read/write access to the "help_record" collection for authenticated users
+    match /help_record/{helpRecordId} {
+      allow read, write: if request.auth != null;
+    }
+
+    match /notifications/{notification} {
+      allow read, write: if request.auth != null;
+    }
+
+    // Allow read/write access to the "joinForms" collection for authenticated users
+    match /joinForms/{document=**} {
+      allow read, write: if request.auth != null;
+    }
+        match /{document=**} {
+      allow read, write: if request.auth != null;
+    }
+
+}
+}
+
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}

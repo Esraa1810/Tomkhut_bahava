@@ -1,0 +1,87 @@
+/* General container styles */
+.frameWork-report-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 70px; /* Added margin at the bottom of the page */
+    direction: rtl; /* Ensure the text direction is right-to-left */
+    background-color: #f8f9fa; /* Light grey background for the container */
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Light shadow for the container */
+  }
+  
+  /* Header style */
+  .frameWork-report-container h1 {
+    text-align: center;
+    margin-bottom: 50px; /* Adjusted space between the header and the start of the data */
+    color: #343a40; /* Dark grey color for the header text */
+  }
+  
+  /* Address section */
+  .Addess h1 {
+    text-align: center;
+    margin-top: 150px; /* Added space above the address section header */
+    color: #343a40; /* Ensure the same color for consistency */
+  }
+  
+  /* First filter section */
+  .first-filter-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between boxes */
+    margin-bottom: 20px;
+  }
+  
+  .first-filter-container .filter-section {
+    flex: 1;
+    min-width: 200px; /* Minimum width for each box */
+  }
+  
+  /* Table styles */
+  .frameWork-report-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Added space between the filters and the table */
+  }
+  
+  .frameWork-report-table th,
+  .frameWork-report-table td {
+    border: 1px solid #ddd; /* Light grey border for table cells */
+    padding: 8px;
+    text-align: center; /* Center-align text in table cells */
+  }
+  
+  .frameWork-report-table th {
+    background-color: #A8A8A8; /* Light grey background for table headers */
+    color: #343a40; /* Dark grey color for header text */
+    font-weight: bold; /* Bold text for headers */
+  }
+  
+  .frameWork-report-table td a {
+    color: #007bff; /* Blue color for links */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .frameWork-report-table td a:hover {
+    text-decoration: underline; /* Underline links on hover */
+  }
+  
+  .frameWork-report-table tr:nth-child(odd) {
+    background-color: #f0f0f0; /* Grey color for odd rows */
+  }
+  
+  .frameWork-report-table tr:nth-child(even) {
+    background-color: #ffffff; /* White color for even rows */
+  }
+  
+  /* Style for the export button container */
+  .export-button-container {
+    /* position: absolute; */
+    /* top: 20px; Distance from the top of the container */
+    left: 100px; /* Distance from the right of the container */
+    margin-right: 85%;
+    /* z-index: 1; Ensure the button is on top */
+  }
+  .frameWork-report-table tr:hover {
+    background-color: #f8d7da;
+  }
+  

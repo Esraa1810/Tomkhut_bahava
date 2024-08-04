@@ -1,0 +1,128 @@
+.statistics-supports-container {
+  padding: 20px;
+  padding-top: 60px;
+  direction: rtl;
+}
+
+.supports-report-container {
+  padding: 20px;
+  direction: rtl;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.supports-report-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+.supports-report-container label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.option-selector {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adjust this value as needed */
+}
+
+.filter-pair {
+  display: flex;
+  gap: 10px; /* Adjust this value as needed */
+}
+
+.half-width {
+  width: 50%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.category-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  flex: 1;
+}
+
+.checkbox-label input {
+  margin-right: 5px;
+}
+
+.chart-type-selector {
+  margin-top: 20px; /* Add margin to separate the buttons from the filters */
+}
+
+.chart-container {
+  margin-top: 20px; /* Add margin to separate the chart from the filters */
+}
+
+.chart-type-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.supports-table-container {
+  width: 100%;
+}
+
+.supports-report-container button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.supports-report-container button:hover {
+  background-color: #45a049;
+}
+
+.supports-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+.supports-table th,
+.supports-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.supports-table th {
+  background-color: pink;
+}
+
+.supports-table tr:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+
+.supports-table tr:nth-child(even) {
+  background-color: #ffffff;
+}

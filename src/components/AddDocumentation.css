@@ -1,0 +1,70 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 600px; /* Increased width */
+    max-width: 90%;
+  }
+  
+  .modal-content h2 {
+    font-size: 24px; /* Increased font size */
+  }
+  
+  .modal-content label {
+    font-size: 18px; /* Increased font size */
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .modal-content input,
+  .modal-content select,
+  .modal-content textarea {
+    font-size: 16px; /* Increased font size */
+    padding: 10px; /* Increased padding */
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  .modal-content textarea {
+    height: 150px; /* Increased height */
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .modal-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Increased font size */
+  }
+  
+  .modal-actions button:first-child {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .modal-actions button:last-child {
+    background-color: #f44336;
+    color: white;
+  }
+  

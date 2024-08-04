@@ -1,0 +1,40 @@
+/* Header.module.css */
+.header {
+    width: 100%;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Fix the header at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it stays on top of other elements */
+    padding: 10px 20px; /* Adjust padding to fit the content */
+  }
+  
+  .headerContent {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .textBox {
+    background-color: pink;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 300px;
+    text-align: right;
+  }
+  
+  .textBox p {
+    margin: 0;
+  }
+  
+  .logo {
+    height: 120px;
+    margin-right: 40px; /* Add margin to move the logo to the left */
+  }
+  

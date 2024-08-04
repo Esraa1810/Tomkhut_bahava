@@ -1,0 +1,387 @@
+body, .App {
+  direction: rtl;
+}
+
+.App {
+  background: linear-gradient(rgb(255, 255, 255)); /* Add gradient background */
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Add position relative to the parent container */
+}
+
+.App-header {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 12%; /* Adjust width as needed */
+  height: 20%;
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+  position: fixed; /* Make the header fixed */
+  top: 0; /* Stick to the top */
+  left: 50%; /* Center the header */
+  transform: translateX(-90%); /* Center the header */
+  z-index: 100; /* Ensure it is on top of other elements */
+}
+
+.logo {
+  width: 200px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 400px; /* Set a maximum height */
+  filter: contrast(1.2); /* Increase contrast to make it bolder */
+}
+
+.contact-info {
+  background-color: pink;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: right;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 250px; /* Adjust the width as needed */
+  cursor: pointer; /* Add cursor pointer to indicate clickability */
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.contact-info-expanded {
+  position: absolute;
+  top: 70px; /* Adjust based on header height */
+  right: 0;
+  background-color: pink;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: right;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  z-index: 1002; /* Ensure it is on top of the header */
+}
+
+.container {
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  padding: 20px;
+  position: relative; /* Ensure relative positioning for absolute children */
+  margin-top: 120px; /* Add margin to avoid overlap with fixed header */
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 125px;
+  font-size: 36px;
+  color: black;
+  margin-left: 50px;
+}
+
+.sidenav.open {
+  width: 250px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.notification-icon {
+  position: fixed;
+  left: 10%;
+  top: 1%;
+}
+
+.notification-icon button {
+  background-color: transparent;
+  border: none;
+  height: 60px;
+  width: 60px;
+  padding: 10px;
+  border-radius: 10%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.notification-icon img {
+  cursor: pointer;
+}
+
+.notification-window {
+  position: absolute;
+  top: 250px;
+  right: 1000px; /* Change to right */
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  width: 300px;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.notification-icon button:hover {
+  background-color: #F08080;
+}
+
+.notification-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.notification-content {
+  font-size: 20px;
+}
+
+/* Add this new class for hello text */
+.hello-text {
+  position: absolute;
+  top: 130px; /* Adjust as needed */
+  right: 90px; /* Align to the right */
+  font-size: 40px;
+  color: #000;
+  font-weight: bold;
+  font-family: 'Ariel', sans-serif;
+  text-shadow: 2px 2px 4px rgba(219, 98, 122, 0.5); /* Add shadow */
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Increase the maximum width */
+  margin: 0 auto; /* Center the container */
+  padding: 20px;
+}
+
+.top-buttons,
+.bottom-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Increase the gap between buttons */
+  margin-bottom: 20px;
+}
+
+.top-buttons {
+  margin-bottom: 40px;
+}
+
+.buttons-container button {
+  height: 190px;
+  width: 250px; /* Increase the width */
+  max-width: 100%; /* Ensure it doesn't exceed the container width */
+  padding: 20px; /* Increased padding */
+  background-color: pink;
+  color: #000000;
+  border: 3px solid #F08080;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 22px; /* Increased font-size */
+  text-align: center;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  flex-direction: column; /* Arrange items vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+}
+
+.buttons-container button img {
+  width: 120px; /* Adjust size as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto 10px; /* Center image and add bottom margin */
+}
+
+.buttons-container button:hover {
+  background-color: #F08080;
+  transform: translateY(-3px);
+}
+
+#popupWindow {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 1001;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: pink;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align: right; /* Align text (buttons) to the right */
+}
+
+.sidenav button {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #111;
+  display: block;
+  transition: 0.3s;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: right; /* Ensure button text alignment is right */
+}
+
+/* Add this new class for the bottom right image */
+.bottom-right-image {
+  position: fixed;
+  bottom: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+  z-index: 10;
+}
+
+/* New styles for user icon and popup */
+.user-icon { /* User icon styling */
+  cursor: pointer;
+  margin-left: auto;
+  padding: 10px;
+  left: 95%;
+  position: fixed;
+  top: 2%;
+}
+
+.user-popup { /* User popup styling */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 1001;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the buttons horizontally */
+  justify-content: center; /* Center the buttons vertically */
+}
+
+.user-popup button { /* Buttons inside user popup */
+  display: block;
+  width: 80%; /* Adjust width as needed */
+  margin: 10px 0;
+  padding: 10px;
+  background-color: pink;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.user-popup button:hover {
+  background-color: #F08080;
+}
+
+.notification-icon { /* Notification icon styling */
+  cursor: pointer;
+  position: fixed;
+  top: 1%;
+  left: 90%;
+}
+
+.notification-icon .notification-count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.notification-window { /* Notification window styling */
+  position: fixed;
+  top: 90px; /* Adjust as needed */
+  right: 90px; /* Adjust as needed */
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  width: 300px; /* Adjust as needed */
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.notification-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.notification-content p {
+  margin: 5px 0;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}

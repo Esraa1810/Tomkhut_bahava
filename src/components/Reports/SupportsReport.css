@@ -1,0 +1,136 @@
+/* General container styles */
+.supports-report-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 70px; /* Added margin at the bottom of the page */
+}
+
+/* Header style */
+.supports-report-container h1 {
+  text-align: center;
+  margin-bottom: 70px; /* Increased space between the header and the start of the data */
+}
+
+/* First filter section */
+.first-filter-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between boxes */
+  margin-bottom: 20px;
+}
+
+.first-filter-container .filter-section {
+  flex: 1;
+  min-width: 200px; /* Minimum width for each box */
+}
+
+/* Second filter section */
+.second-filter-sectionBirth {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between boxes */
+  margin-bottom: 20px;
+}
+
+.second-filter-sectionBirth .filter-section {
+  flex: 1;
+  min-width: 200px; /* Minimum width for each box */
+}
+
+/* Third filter section */
+.third-filter-sectionBirth {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between boxes */
+  margin-bottom: 20px;
+}
+
+.third-filter-sectionBirth .filter-section {
+  flex: 1;
+  min-width: 200px; /* Minimum width for each box */
+}
+
+/* Fourth filter section */
+.forth-filter-sectionBirth {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between boxes */
+  margin-bottom: 20px;
+}
+
+.forth-filter-sectionBirth > div {
+  flex: 1;
+  width: auto; /* Allow the boxes to adjust width */
+}
+
+/* Fifth filter section */
+.fifth-filter-sectionCreatedAt {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between boxes */
+  margin-bottom: 20px;
+}
+
+.fifth-filter-sectionCreatedAt > div {
+  flex: 1;
+  width: auto; /* Allow the boxes to adjust width */
+}
+
+/* Updated styles to place the fifth and fourth sections on the same line */
+.special-sectio {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between the sections */
+  margin-bottom: 20px;
+}
+
+.special-sectio .forth-filter-sectionBirth,
+.special-sectio .fifth-filter-sectionCreatedAt {
+  display: flex;
+  gap: 20px; /* Space between the two sections */
+  flex: 1;
+  width: auto; /* Allow the sections to adjust width */
+}
+
+.special-sectio .forth-filter-sectionBirth > div,
+.special-sectio .fifth-filter-sectionCreatedAt > div {
+  flex: 1;
+  width: auto; /* Allow the boxes to adjust width */
+}
+
+/* Style for the DatePicker component */
+.react-datepicker-wrapper,
+.react-datepicker__input-container input {
+  width: 100%;
+}
+
+/* Table styles */
+.supports-report-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px; /* Added space between the filters and the table */
+}
+
+.supports-report-table th,
+.supports-report-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.supports-report-table th {
+  background-color: #A8A8A8;
+}
+
+.supports-report-table tr:nth-child(odd) {
+  background-color: #f0f0f0; /* Grey color for odd rows */
+}
+
+.supports-report-table tr:nth-child(even) {
+  background-color: #ffffff; /* White color for even rows */
+}
+
+/* Hover effect for table rows */
+.supports-report-table tr:hover {
+  background-color: #f8d7da;
+}

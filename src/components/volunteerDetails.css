@@ -1,0 +1,140 @@
+.VolunteerDetails-page-container {
+  margin-top: 100px; /* Add a margin to ensure the home button is not covered */
+}
+
+.VolunteerDetails-form-container {
+  width: 80%;
+  margin: 0 auto;
+  direction: rtl;
+  font-family: Arial, sans-serif;
+}
+
+.VolunteerDetails-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.VolunteerDetails-contact-info {
+  background-color: pink;
+  padding: 10px;
+  border-radius: 5px;
+  width: 25%;
+}
+
+.VolunteerDetails-logo-container {
+  width: 25%;
+}
+
+.VolunteerDetails-details-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.VolunteerDetails-details-group {
+  flex: 1;
+}
+
+.VolunteerDetails-details-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.VolunteerDetails-details-group p {
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  font-weight: bold;
+}
+
+.VolunteerDetails-details-group input, 
+.VolunteerDetails-details-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.VolunteerDetails-details-group textarea {
+  min-height: 100px;
+}
+
+.VolunteerDetails-details-group.error input,
+.VolunteerDetails-details-group.error textarea {
+  border-color: red;
+}
+
+.VolunteerDetails-error-container {
+  background-color: #ffdddd;
+  color: #d9534f;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.VolunteerDetails-details-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.VolunteerDetails-edit-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.VolunteerDetails-delete-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.VolunteerDetails-edit-button img {
+  width: 24px;
+  height: 24px;
+}
+.VolunteerDetails-delete-button img {
+  width: 24px;
+  height: 24px;
+}
+
+.VolunteerDetails-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.VolunteerDetails-button:hover {
+  background-color: #0056b3;
+}
+
+.VolunteerDetails-additional-info-container {
+  display: flex;
+  align-items: center;
+  background-color: #626e78;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  justify-content: flex-end;
+}
+
+.VolunteerDetails-edit-icon {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.VolunteerDetails-delete-icon {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  margin-left: 10px;
+}

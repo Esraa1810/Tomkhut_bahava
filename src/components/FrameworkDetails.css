@@ -1,0 +1,159 @@
+/* FrameworkDetails.css */
+.framework-details-outer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px; /* Increase the padding-top to push content further down */
+}
+
+.framework-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.framework-details-container {
+  width: 100%;
+  max-width: 900px; /* Increase the max-width for better readability */
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.framework-title {
+  text-align: center; /* Center align the title */
+  width: 100%; /* Ensure the width is 100% */
+  margin-bottom: 20px; /* Optional: Add some space below the title */
+  
+}
+
+.framework-info {
+  width: 100%; /* Ensure the content takes full width */
+}
+
+.framework-details-row {
+  display: flex;
+  justify-content: space-between; /* Space items evenly */
+  margin-top: 10px; /* Optional: Add some spacing above */
+}
+
+.spacing {
+  margin-left: 20px; /* Add space to the left of the second element */
+}
+
+.branches-section {
+  margin-top: 20px;
+  width: 100%; /* Ensuring full width */
+}
+
+.branch-details {
+  margin-bottom: 20px;
+  padding: 15px; /* Increase padding for better spacing */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.branch-details h4 {
+  margin: 0; /* Adjust margin for the branch title */
+}
+
+.branch-details h5 {
+  margin-top: 10px; /* Spacing before contacts heading */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 10px; /* Increase padding for better spacing */
+  border: 1px solid #eee;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  background-color: #fefefe; /* Optional: lighter background for better readability */
+}
+
+ul li p {
+  margin: 4px;
+}
+.edit-icon {
+  cursor: pointer;
+  margin-left: 20px; /* הוסף מרווח בין האייקון לטקסט */
+  width: 30px; /* גודל האייקון */
+  height: 30px; /* גודל האייקון */
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content button {
+  background-color: #007bff;
+
+  padding: 20px;
+  border-radius: 4px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.modal h2 {
+  margin-bottom: 10px;
+}
+
+.modal button {
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.modal button:last-child {
+  background-color: #dc3545;/* כפתור טופס*/
+}
+
+.modal button:hover {
+  background-color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .FrameworkDetails-details-group {
+    flex: 1 1 100%;
+  }
+}
+#FrameworkDetails-error button {
+  background-color: blue !important; /* צבע רקע כחול */
+  color: white !important; /* צבע טקסט לבן */
+
+  background-color: blue; /* צבע רקע כחול */
+  color: white; /* צבע טקסט לבן */
+  border: none; /* בלי גבול */
+  padding: 10px 20px; /* רפידות סביב הכפתור */
+  text-align: center; /* מיושר במרכז */
+  text-decoration: none; /* בלי קו תחתון */
+  display: inline-block; /* כדי שהכפתורים יופיעו זה ליד זה */
+  margin: 4px 2px; /* רווחים בין הכפתורים */
+  cursor: pointer; /* מצביע כשעוברים עם העכבר על הכפתור */
+  border-radius: 5px; /* פינות מעוגלות */
+}
+
+#FrameworkDetails-error button:hover {
+  background-color: darkblue; /* צבע רקע כשעוברים עם העכבר */
+}

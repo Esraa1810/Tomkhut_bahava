@@ -1,0 +1,34 @@
+.reports-list-container {
+  padding: 20px;
+  direction: rtl; /* Ensure the text direction is right-to-left */
+}
+
+.reports-list-container h1 {
+text-align: center;
+margin-bottom: 20px;
+}
+
+
+
+.reports-list {
+list-style-type: none;
+background-color: #f5f5f5;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+margin: 0 auto; /* Center the box */
+max-width: 600px; /* Set a max-width for the box */
+margin-top: 60px; /* Add margin to move the box below the logo */
+}
+
+.reports-list li {
+padding: 15px;
+border: 1px solid #ddd;
+margin-bottom: 10px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.reports-list li:hover {
+background-color: #f0f0f0;
+}
